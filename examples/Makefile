@@ -2,7 +2,8 @@ CC := sdcc
 CFLAGS := -mmcs51 --std-c99
 INCLUDES := -I.
 SOURCES = 01-blink 
-SOURCES_LIB = 01-blink-lib 02-uart-lib
+SOURCES_LIB = 01-blink-lib 02-uart-lib 03-watchdog 04-interrupt \
+	05-timer0-interrupt 06-timer0-track-time 07-timer0-counter
 LIB_STC = ../lib/serial.rel ../lib/utils.rel
 
 

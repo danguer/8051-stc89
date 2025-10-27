@@ -98,6 +98,19 @@ __sfr __at (0xCD) TH2;
  */
 __sfr __at (0xE1) WDT_CONTR;
 
+#define WDT_PRESCALE_2 0x0
+#define WDT_PRESCALE_4 0x1
+#define WDT_PRESCALE_8 0x2
+#define WDT_PRESCALE_16 0x3
+#define WDT_PRESCALE_32 0x4
+#define WDT_PRESCALE_64 0x5
+#define WDT_PRESCALE_128 0x6
+#define WDT_PRESCALE_256 0x7
+
+#define IDLE_WDT 0x8
+#define CLR_WDT 0x10
+#define EN_WDT 0x20
+
 /*
  * Port 4
  *   Bit Mapping: P4.7 P4.6 P4.5 P4.4 P4.3 P4.2 P4.1 P4.0
